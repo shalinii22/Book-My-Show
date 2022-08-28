@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_8sdp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/buzzItemLayoutRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvBuzzImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/ivBuzzImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/movies" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/ivBuzzBookmarkIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@id/cvBuzzImage"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/buzz_bookmark_icon" />
+
+        <TextView
+            android:id="@+id/my_movie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/cvBuzzImage"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/ivBuzzBookmarkIcon"
+            android:layout_toEndOf="@+id/cvBuzzImage"
+            android:layout_toRightOf="@id/cvBuzzImage"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/movie_cast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_movie_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@+id/ivBuzzBookmarkIcon"
+            android:layout_toEndOf="@+id/cvBuzzImage"
+            android:layout_toRightOf="@id/cvBuzzImage"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/movie_genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movie_cast"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/cvBuzzImage"
+            android:hint="1 Day ago"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp" />
+
+    </RelativeLayout>
+</LinearLayout>

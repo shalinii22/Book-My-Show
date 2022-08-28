@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.MapsActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#222539"
+        android:padding="2dp"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/editText"
+            android:layout_weight="0.7"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:background="@drawable/background_input_white"
+            android:inputType="textPersonName"
+            android:hint="Search Location" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:backgroundTint="@color/red"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="Search" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_to_database"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:textAllCaps="false"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:text="Add to Database" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

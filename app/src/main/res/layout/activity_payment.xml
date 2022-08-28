@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:padding="24dp"
+    android:scrollbars="none"
+    tools:context=".user.PaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/inputCard"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/background_input"
+            android:hint="Enter your Card Number"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp" />
+
+        <EditText
+            android:id="@+id/inputNameOnCard"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_input"
+            android:hint="Name on card"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/inputMonth"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="48dp"
+                    android:background="@drawable/background_input"
+                    android:hint="MM"
+                    android:inputType="number"
+                    android:layout_margin="1sp"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/inputYear"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1sp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/background_input"
+                    android:hint="YY"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:padding="4sp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/inputCvv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="48dp"
+                    android:background="@drawable/background_input"
+                    android:hint="CVV"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textColor="@color/black"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonPay"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/red"
+            android:text="Make Payment"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/red"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</ScrollView>

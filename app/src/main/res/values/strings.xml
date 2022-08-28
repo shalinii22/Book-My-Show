@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Book My Show</string>
+    <string name="book_my_show">Book My Show</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="theatre_admin">Theatre Admin</string>
+    <string name="user_login">User Login</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="login_to_continue">Login To Continue</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="add_image">Add Image</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_out">Sign out</string>
+    <string name="capacity">Capacity</string>
+    <string name="city">City</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="theatre_name">Theatre Name</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="movie_name">Movie Name</string>
+    <string name="category">Category</string>
+    <string name="genre">Genre</string>
+    <string name="star_cast">Star Cast</string>
+    <string name="language">Language</string>
+    <string name="view_movies">View Movies</string>
+    <string name="add_show">Add Show</string>
+    <string name="view_shows">View Shows</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

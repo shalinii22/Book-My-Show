@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnBookTicket">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/activity_main_youtubePlayerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:autoPlay="false"
+                    app:showFullScreenButton="true"
+                    app:videoId="A6eZ49O67YQ" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/icons8_heart_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/cantora_one"
+                android:text="80% 14.7K ratings"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="#EEEEEE"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="Add your rating &amp; review"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvRating"
+                    android:layout_marginStart="10dp"
+                    android:text="Your ratings matter"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/light_red"
+                    android:text="Rate Now"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#EEEEEE"
+                    android:padding="3dp"
+                    android:text="2d, 3d"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#EEEEEE"
+                    android:padding="3dp"
+                    android:text="Hindi, English"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#C62222" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#C62222" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/dashes"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvFilmyPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:drawableStart="@drawable/ic_baseline_book_online_24"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/concert_one"
+                    android:text="Filmy Pass"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvFilmyPass"
+                    android:layout_marginStart="10dp"
+                    android:text="Get Rs.75* off on 3 movies you buy/rent on Stream. Buy Filmy Pass @Rs.99"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="8dp"
+                android:background="#C62222" />
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:fontFamily="@font/concert_one"-->
+<!--                android:text="Cast"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp" />-->
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollIndicators="bottom">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="100dp"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:src="@drawable/akshay_kumar" />-->
+
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="100dp"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:src="@drawable/vaani_kapoor" />-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="100dp"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:src="@drawable/huma_qureshi" />-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="100dp"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:src="@drawable/lara_dutta" />-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="100dp"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:src="@drawable/jackky_bhagnani" />-->
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="8dp"
+                android:background="#C62222" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnBookTicket"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#C62222"
+        android:text="Book Ticket"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:visibility="visible" />
+
+</RelativeLayout>

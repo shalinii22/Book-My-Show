@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:padding="24dp"
+    android:scrollbars="none"
+    tools:context=".admin.AddShowActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/movies_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <Spinner
+                android:id="@+id/movieId"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:imeOptions="actionNext"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/black"
+                android:background="@drawable/btnshape_blue"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <TextView
+                    android:text="Date"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/design_default_color_primary"
+                    android:textSize="@dimen/_14ssp"
+                    android:layout_height="match_parent"
+                    />
+
+                <DatePicker
+                    android:id="@+id/date_Picker"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:datePickerMode = "spinner"
+                    android:calendarViewShown="false"/>
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <TextView
+                    android:text="Time"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/design_default_color_primary"
+                    android:textSize="@dimen/_14ssp"
+                    android:layout_height="match_parent"
+                    />
+                <TimePicker
+                    android:id="@+id/time_picker"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:timePickerMode="spinner"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="2"
+                >
+                <Button
+                    android:id="@+id/buttonAddShow"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#C62222"
+                    android:text="Add Show"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+                <Button
+                    android:id="@+id/buttonCancel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#C62222"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/no_movies_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/red"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/success"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="No Movies!!"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sentence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Your movies will appear here."
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>
